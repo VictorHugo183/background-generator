@@ -3,13 +3,26 @@ let color1 = document.querySelector(".color1");
 let color2 = document.querySelector(".color2");
 let body = document.getElementById("gradient");
 let random = document.querySelector(".random");
+let swap = document.querySelector(".swap");
 
 body.style.background = "linear-gradient(to right, "+ color1.value+", "+color2.value+")";
 css.textContent = body.style.background + ";";
 
+swap.addEventListener("click", swapColors);
 random.addEventListener("click", randomize);
 color1.addEventListener("input", setGradient);
 color2.addEventListener("input", setGradient);
+
+function setGradient() {
+ body.style.background =
+ "linear-gradient(to right, "
+ + color1.value
+ + ", "
+ +color2.value
+ +")";
+
+ 	css.textContent = body.style.background + ";";
+}
 
 function randomize(){
 	let color1list = ["#"];
@@ -34,13 +47,9 @@ function randomize(){
 	setGradient(color1.value, color2.value);
 }
 
-function setGradient() {
- body.style.background =
- "linear-gradient(to right, "
- + color1.value
- + ", "
- +color2.value
- +")";
-
- 	css.textContent = body.style.background + ";";
+function swapColors() {
+	let swapColor = color1.value;
+	color1.value = color2.value;
+	color2.value = swapColor;
+	setGradient(color1.value, color2.value);
 }
