@@ -2,8 +2,8 @@ let css = document.querySelector("h3");
 let color1 = document.querySelector(".color1");
 let color2 = document.querySelector(".color2");
 let body = document.getElementById("gradient");
-let random = document.querySelector(".random");
-let swap = document.querySelector(".swap");
+let randomButton = document.querySelector(".random");
+let swapButton = document.querySelector(".swap");
 let dropDown = document.querySelector(".colorFormat");
 let saveButton = document.querySelector(".save");
 let saveList = document.getElementById("saved");
@@ -15,8 +15,8 @@ css.textContent = body.style.background + ";";
 saveList.addEventListener("change", setSavedGradient);
 saveButton.addEventListener("click", save);
 dropDown.addEventListener("change", convertCSStext); //only call the function when selecting a different option.
-swap.addEventListener("click", swapColors);
-random.addEventListener("click", randomize);
+swapButton.addEventListener("click", swapColors);
+randomButton.addEventListener("click", randomize);
 color1.addEventListener("input", setGradient);
 color2.addEventListener("input", setGradient);
 
