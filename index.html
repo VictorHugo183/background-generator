@@ -6,15 +6,19 @@
 </head>
 <body id="gradient">
 	<h1>Background Generator</h1>
-	<input type="color" class="color1" name="color1" value="#ebd5b6">
-	<input type="color" class="color2"name="color2" value="#46658c">
+	<input type="color" class="color1" name="color1" value="#5652cb">
+	<input type="color" class="color2"name="color2" value="#1ad9cb">
 	<h2>Current Background CSS</h2>
 	<h3></h3>
-	<input type="button" value="RANDOM" class="random">
-	<input type="button" value="SWAP" class="swap">
-	<select class="format">
+	<select class="colorFormat">
 		<option value="rgb">RGB</option>
 		<option value="hex">Hexadecimal</option>
+	</select>
+	<input type="button" value="SWAP" class="swap">
+	<input type="button" value="RANDOM" class="random">
+	<input type="button" value="Save current background" class="save">
+	<select id="saved">
+		<option value="" selected disabled>Saved Backgrounds</option>
 	</select>
 	<script type="text/javascript" src="script.js"></script>
 </body>
