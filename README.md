@@ -1,6 +1,6 @@
 # Gradient Background Generator:
-View live website: https://victorhugo183.github.io/background-generator/
-One of my first web projects, a website where you can pick colours for a gradient background and view the CSS code for it.<br>
+View live website: https://victorhugo183.github.io/background-generator/<br>
+One of my first web projects, a website where you can pick colours for a gradient background and view the CSS code for it.
 
 ### Goal:
 To learn to manipulate the DOM with Javascript
